@@ -45,8 +45,8 @@ export default function NavBar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          isScrolled ? "bg-surface/90 backdrop-blur-md border-b border-white/5" : "bg-transparent"
+        className={`fixed top-0 left-0 w-full z-50 transition-[background-color,backdrop-filter,border-color] duration-300 transform-gpu will-change-[background-color,backdrop-filter] ${
+          isScrolled ? "bg-surface/90 backdrop-blur-md border-b border-white/5" : "bg-transparent border-b border-transparent"
         }`}
       >
         <div className="max-w-[1800px] mx-auto px-6 md:px-12 h-28 md:h-32 flex items-center justify-between relative">

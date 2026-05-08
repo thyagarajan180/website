@@ -55,10 +55,13 @@ body::after {
 
 html.lenis, html.lenis body {
   height: auto;
+  min-height: 100%;
 }
 
+/* Fix for fixed headers on mobile to prevent gaps and shaking */
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
+  overscroll-behavior: none;
 }
 
 .lenis.lenis-smooth [data-lenis-prevent] {
