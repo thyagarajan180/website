@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Barlow_Condensed, Lora, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import SmoothScrolling from "@/components/animations/SmoothScrolling";
 import CustomCursor from "@/components/ui/CustomCursor";
@@ -39,6 +39,12 @@ const jetbrainsMono = JetBrains_Mono({
   display: 'swap',
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://180tattoostudio.in"),
   title: {
@@ -46,7 +52,6 @@ export const metadata: Metadata = {
     template: "%s | 180 Tattoo Studio Chennai"
   },
   description: "Experience world-class artistry and medical-grade hygiene at 180 Tattoo Studio. Specializing in realism, fine-line, and custom portraits. Locations in Eldams Rd & G.N. Chetty Rd, Teynampet, Chennai. Est. 2019.",
-  viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
   keywords: ["Tattoo Studio Chennai", "Best Tattoo Artist Chennai", "Teynampet Tattoo", "Anna Flyover Tattoo", "Realism Tattoo India", "Portrait Tattoo Artist", "Hygienic Tattoo Studio Chennai", "180 Tattoo"],
   authors: [{ name: "180 Tattoo Studio" }],
   openGraph: {
@@ -92,10 +97,10 @@ export default function RootLayout({
         <SchemaOrg />
       </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        <Preloader />
+        <CustomCursor />
+        <NavBar />
         <SmoothScrolling>
-          <Preloader />
-          <CustomCursor />
-          <NavBar />
           <main className="flex-grow">
             {children}
           </main>
