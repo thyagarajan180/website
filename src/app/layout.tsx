@@ -46,6 +46,7 @@ export const metadata: Metadata = {
     template: "%s | 180 Tattoo Studio Chennai"
   },
   description: "Experience world-class artistry and medical-grade hygiene at 180 Tattoo Studio. Specializing in realism, fine-line, and custom portraits. Locations in Eldams Rd & G.N. Chetty Rd, Teynampet, Chennai. Est. 2019.",
+  viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
   keywords: ["Tattoo Studio Chennai", "Best Tattoo Artist Chennai", "Teynampet Tattoo", "Anna Flyover Tattoo", "Realism Tattoo India", "Portrait Tattoo Artist", "Hygienic Tattoo Studio Chennai", "180 Tattoo"],
   authors: [{ name: "180 Tattoo Studio" }],
   openGraph: {

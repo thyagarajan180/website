@@ -53,6 +53,10 @@ body::after {
   background-repeat: repeat;
 }
 
+html, body {
+  height: -webkit-fill-available;
+}
+
 html.lenis, html.lenis body {
   height: auto;
   min-height: 100%;
@@ -62,6 +66,7 @@ html.lenis, html.lenis body {
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
   overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .lenis.lenis-smooth [data-lenis-prevent] {
