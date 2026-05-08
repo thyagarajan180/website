@@ -13,7 +13,7 @@ export default function Logo({ className = "", variant = "nav" }: LogoProps) {
       className={`group flex items-center transition-all duration-300 hover:opacity-80 ${className}`}
       aria-label="180 Tattoo Studio"
     >
-      <div className={`relative ${variant === "nav" ? "h-32 w-32 md:h-44 md:w-44 mt-1" : "h-48 w-48 md:h-64 md:w-64"} flex items-center`}>
+      <div className={`relative ${variant === "nav" ? "h-20 w-20 md:h-44 md:w-44 mt-1" : "h-48 w-48 md:h-64 md:w-64"} flex items-center`}>
         <Image
           src="/logo-v6.png"
           alt="180 Tattoo Studio Logo"

@@ -23,7 +23,7 @@ export default function GalleryPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* HEADER */}
-      <section className="relative pt-44 pb-24 px-6 md:px-12 bg-surface overflow-hidden">
+      <section className="relative pt-32 md:pt-44 pb-24 px-6 md:px-12 bg-surface overflow-hidden">
         <HeroSlider 
           images={[
             "/gallery/IMG_0576.webp",

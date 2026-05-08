@@ -72,7 +72,7 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* HERO */}
-      <section className="relative pt-44 pb-24 px-6 md:px-12 bg-surface overflow-hidden border-b border-gold-dim/20">
+      <section className="relative pt-32 md:pt-44 pb-24 px-6 md:px-12 bg-surface overflow-hidden border-b border-gold-dim/20">
         <HeroSlider 
           images={[
             "/gallery/IMG_4135.webp",
