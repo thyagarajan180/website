@@ -45,11 +45,11 @@ export default function NavBar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled ? "bg-surface/90 backdrop-blur-md border-b border-white/5" : "bg-transparent"
         }`}
       >
-        <div className="max-w-[1800px] mx-auto px-6 md:px-12 h-20 md:h-32 flex items-center justify-between">
+        <div className="max-w-[1800px] mx-auto px-6 md:px-12 h-28 md:h-32 flex items-center justify-between relative">
           <Logo />
 
           <div className="hidden lg:flex items-center gap-10 font-meta text-xs tracking-widest uppercase">

@@ -15,7 +15,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* HERO */}
-      <section className="relative pt-32 md:pt-44 pb-32 px-6 md:px-12 bg-surface overflow-hidden">
+      <section className="relative pt-40 md:pt-44 pb-32 px-6 md:px-12 bg-surface overflow-hidden">
         <HeroSlider 
           images={[
             "/gallery/IMG_0156.webp",
