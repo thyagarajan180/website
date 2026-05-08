@@ -3,7 +3,7 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 
-export default function Tilt({ children, rotation = 15 }: { children: React.ReactNode, rotation?: number }) {
+export default function Tilt({ children, rotation = 15, className = "" }: { children: React.ReactNode, rotation?: number, className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -46,7 +46,7 @@ export default function Tilt({ children, rotation = 15 }: { children: React.Reac
   }, [rotation]);
 
   return (
-    <div ref={ref} className="transition-transform duration-500 ease-out">
+    <div ref={ref} className={`transition-transform duration-500 ease-out ${className}`}>
       {children}
     </div>
   );

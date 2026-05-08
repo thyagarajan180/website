@@ -12,7 +12,7 @@ import FAQ from "@/components/ui/FAQ";
 export default function TeamPage() {
   useEffect(()=>{
     (async function () {
-      const cal = await getCalApi({"namespace":"default","embedLibUrl":"https://cal.id/embed-link/embed.js"});
+      const cal = await getCalApi({"namespace":"default","embedJsUrl":"https://cal.id/embed-link/embed.js"});
       cal("ui", {"theme":"dark","cssVarsPerTheme":{"light":{"cal-brand":"#ab8600"},"dark":{"cal-brand":"#ab8600","cal-bg":"#080806"}},"hideEventTypeDetails":false,"layout":"month_view"});
     })();
   }, [])
