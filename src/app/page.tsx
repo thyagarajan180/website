@@ -341,7 +341,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
           {TEAM_MEMBERS.map((member) => (
             <Tilt key={member.id} rotation={5}>
-              <div className="group relative" data-cursor="view" data-reveal>
+              <Link href={`/team#${member.id}`} className="group relative block" data-cursor="view" data-reveal>
                 <div className="aspect-[3/4] relative overflow-hidden bg-surface mb-6" data-parallax>
                   <Image
                     src={member.portrait}
@@ -357,7 +357,7 @@ export default function Home() {
                 <p className="font-meta text-xs text-text-secondary tracking-widest uppercase">
                   {member.title}
                 </p>
-              </div>
+              </Link>
             </Tilt>
           ))}
         </div>

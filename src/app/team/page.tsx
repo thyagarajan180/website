@@ -71,6 +71,7 @@ export default function TeamPage() {
         {TEAM_MEMBERS.map((member, idx) => (
           <div 
             key={member.id} 
+            id={member.id}
             className={`flex flex-col ${idx % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-16 items-center`}
           >
             {/* Portrait */}
