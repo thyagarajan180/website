@@ -25,25 +25,30 @@ export default function ContactPage() {
     setErrorMessage("");
 
     try {
-      const res = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { 
+        headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify({
+          access_key: "570dbc70-3609-4390-8156-4e7eb2f4454a",
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
-          message: formData.message
+          message: formData.message,
+          from_name: "180 Tattoo Website",
         }),
       });
 
-      if (!res.ok) {
-        throw new Error("Something went wrong.");
-      }
+      const result = await response.json();
 
-      setStatus("success");
-      setFormData({ name: "", email: "", subject: "Tattoo Inquiry", message: "" });
+      if (result.success) {
+        setStatus("success");
+        setFormData({ name: "", email: "", subject: "Tattoo Inquiry", message: "" });
+      } else {
+        throw new Error(result.message || "Something went wrong.");
+      }
     } catch (error: any) {
       setStatus("error");
       setErrorMessage(error.message || "Failed to send message.");
