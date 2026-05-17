@@ -361,10 +361,7 @@ export default function Home() {
             </Tilt>
           ))}
         </div>
-        
-        <div className="mt-12 text-center text-text-secondary font-meta text-xs tracking-widest uppercase">
-          Studio managed by Pugazh
-        </div>
+
 
         <div className="mt-16 text-center">
           <Link href="/team" className="font-headline font-bold text-2xl uppercase text-foreground hover:underline underline-offset-8 decoration-gold decoration-2 transition-all">

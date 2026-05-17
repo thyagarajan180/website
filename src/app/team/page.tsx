@@ -135,33 +135,9 @@ export default function TeamPage() {
       <section className="bg-surface py-4 md:py-6 border-y border-gold-dim/30 mt-8 md:mt-12">
         <Ticker speed={40}>
           <span className="font-display font-bold text-gold/30 text-3xl md:text-6xl tracking-[0.4em] uppercase mx-8 md:mx-12">
-            THIYAGARAJAN ✦ AISHWARYA ✦ PUGAZH ✦ THIYAGARAJAN ✦ AISHWARYA ✦ PUGAZH ✦
+            THIYAGARAJAN ✦ AISHWARYA ✦ THIYAGARAJAN ✦ AISHWARYA ✦ THIYAGARAJAN ✦ AISHWARYA ✦
           </span>
         </Ticker>
-      </section>
-
-      {/* STUDIO MANAGER SECTION */}
-      <section className="py-24 px-6 md:px-12 max-w-[1200px] mx-auto border-t border-gold-dim/20">
-        <div className="flex flex-col md:flex-row items-center gap-16">
-          <div className="w-full md:w-1/3 aspect-[3/4] relative bg-surface border border-gold-dim/20 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-            <Image 
-              src="/team/Pugazh___Manager__.webp" 
-              alt="Pugazh - Studio Manager" 
-              fill 
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 33vw"
-            />
-          </div>
-          <div className="w-full md:w-2/3 text-center md:text-left">
-            <div className="inline-block border border-gold text-gold font-meta text-[10px] tracking-widest px-3 py-1 uppercase mb-8 stencil-stamp">
-              STUDIO MANAGEMENT
-            </div>
-            <h2 className="font-display font-extrabold text-5xl text-accent uppercase mb-6">Pugazh</h2>
-            <p className="font-body text-xl text-text-secondary leading-relaxed max-w-2xl">
-              Behind every great artist is an even better manager. Pugazh ensures that your 180 experience is seamless from the first inquiry to the final aftercare check-in. He handles all logistics so the artists can focus solely on your skin.
-            </p>
-          </div>
-        </div>
       </section>
 
       {/* TEAM FAQS */}
