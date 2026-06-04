@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 02.5 — THE MANIFESTO */}
-      <section className="py-20 md:py-28 px-6 md:px-12 max-w-[1400px] mx-auto text-center flex flex-col items-center justify-center relative overflow-hidden" data-skew>
+      <section className="py-20 md:py-28 px-6 md:px-12 max-w-[1400px] mx-auto text-center flex flex-col items-center justify-center relative overflow-hidden">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[30vw] h-[30vw] opacity-[0.02] pointer-events-none select-none z-0 translate-x-1/4">
           <Image src="/logo-v6.png" alt="" fill className="object-contain" />
         </div>
