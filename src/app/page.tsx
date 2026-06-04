@@ -243,7 +243,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 04 — STATS BLOCK */}
-      <section className="bg-surface py-24 px-6 border-y border-gold-dim/30" data-skew>
+      <section className="bg-surface py-24 px-6 border-y border-gold-dim/30">
         <div className="max-w-[1400px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center" data-reveal>
           <div className="flex flex-col gap-2">
             <div className="font-mono text-4xl md:text-6xl text-foreground odometer"><Odometer value={1000} suffix="+" /></div>
