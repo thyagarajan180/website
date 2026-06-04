@@ -157,7 +157,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-2 space-y-2">
+        <div className={`gap-2 space-y-2 ${
+          filteredGallery.length === 1 ? 'columns-1 max-w-xl mx-auto' :
+          (filteredGallery.length === 2 || filteredGallery.length === 4) ? 'columns-1 md:columns-2 max-w-5xl mx-auto' :
+          'columns-1 md:columns-2 lg:columns-3'
+        }`}>
           {filteredGallery.slice(0, 9).map((item) => (
             <div 
               key={item.id} 
